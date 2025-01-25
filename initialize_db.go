@@ -12,7 +12,7 @@ func connectDB() (*gorm.DB, error) {
 	dbPort := "5433"
 	dbName := "go_scraping_dev"
 	dbUser := "go-scraping-user"
-	dbPassword := "password"
+	dbPassword := "postgrespassword"
 
 	// Postgres用のDSN形式を修正
 	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable", dbHost, dbUser, dbPassword, dbName, dbPort)
